@@ -1,0 +1,7 @@
+[package]
+name = "data_frame-rs"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+twox-hash = "1.6.3"
