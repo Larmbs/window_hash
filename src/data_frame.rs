@@ -2,7 +2,7 @@ use std::hash::BuildHasherDefault;
 use std::collections::HashMap;
 use twox_hash::XxHash64;
 use std::fmt::Debug;
-use super::{DefaultConsumer, DroppedValueConsumer};
+use super::DroppedValueConsumer;
 
 
 pub struct DataFrame<T, C> where C: DroppedValueConsumer<T> {
@@ -64,7 +64,8 @@ impl<T, C> Debug for DataFrame<T, C> where C: DroppedValueConsumer<T> + Default 
 
 #[cfg(test)]
 mod test {
-    use super::{DataFrame, DefaultConsumer};
+    use super::DataFrame;
+    use crate::DefaultConsumer;
 
     #[test]
     pub fn test_1() {

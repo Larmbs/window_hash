@@ -2,6 +2,8 @@
 name = "data_frame-rs"
 version = "0.1.0"
 edition = "2021"
+description = "Data Frame type for value over time tracking"
+license = "MIT"
 
 [dependencies]
 twox-hash = "1.6.3"
